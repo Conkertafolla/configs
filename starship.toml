@@ -1,0 +1,76 @@
+# Configure the character module (prompt symbol)
+[character]
+success_symbol = "[➜](bold green)"   # Symbol for successful commands
+error_symbol = "[✗](bold red)"       # Symbol for failed commands
+style = "bold yellow"                # Default style for the prompt character
+
+# Configure the directory module
+[directory]
+truncation_length = 3                # Number of parent directories to show
+truncate_to_repo = false             # Don't truncate beyond the repo root
+style = "bold cyan"                  # Style of the directory name
+
+# Configure the git_branch module
+[git_branch]
+symbol = "🌱 "                       # Symbol before the branch name
+style = "bold green"                 # Style for the branch name
+format = "on [$symbol$branch]($style)"  # Format to show branch name
+
+# Configure the git_status module
+[git_status]
+format = "([$all_status]($style)) "  # Format for Git status
+style = "bold yellow"                # Style for the Git status
+staged = "✔️ "                       # Files staged
+modified = "✏️ "                     # Files modified
+untracked = ""                    # Files untracked
+stashed = "📦 "                      # Files stashed
+deleted = "❌ "                      # Files deleted
+ahead = "⇡"                         # Commits ahead
+behind = "⇣"                        # Commits behind
+diverged = "⇕"                      # Commits diverged
+conflicted = "⚔️ "                  # Files conflicted
+
+# Configure the time module
+[time]
+disabled = false                     # Enable the time module
+format = "🕒 [$time]($style) "       # Format to display time
+style = "bold magenta"               # Style for the time
+time_format = "%H:%M:%S"             # Custom time format
+
+# Configure the package module
+[package]
+disabled = false                     # Show package version
+symbol = "📦 "                       # Symbol before the package name
+style = "bold blue"
+
+# Configure the python module
+[python]
+symbol = "🐍 "                       # Symbol for Python version
+style = "bold yellow"                # Style for the Python version
+pyenv_version_name = true            # Show version from pyenv if available
+format = "via [$symbol$version]($style) "  # Format for Python module
+
+# Configure the nodejs module
+[nodejs]
+symbol = "⬢ "                       # Symbol for Node.js version
+style = "bold green"                 # Style for the Node.js version
+format = "via [$symbol$version]($style) "  # Format for Node.js module
+
+# Configure the memory module
+[memory_usage]
+disabled = false                     # Enable memory usage
+format = "💻 [$ram(used)]($style)/[$ram(total)]($style) "  # Format for memory
+threshold = 75                       # Show memory usage if above this percentage
+style = "bold red"
+
+# Configure the docker context module
+[docker_context]
+disabled = false                     # Enable Docker context
+symbol = "🐳 "                       # Symbol for Docker context
+style = "bold blue"                  # Style for Docker context
+
+# Disable some unnecessary modules
+[battery]
+disabled = true                      # Disable battery status
+[hostname]
+disabled = true      
