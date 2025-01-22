@@ -29,3 +29,11 @@ bindings = [
   { key = "V", mods = "Control", action = "Paste" },
   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"}, # `Ctrl+D` to close
 ]
+
+[general]
+working_directory = "C:\\Users\\Gerardo Tafolla\\Documents\\code"
+
+[font]
+normal = { family = "Iosevka Nerd Font", style = "Regular"}
+bold = { family = "Iosevka Nerd Font", style = "Bold"}
+size = 12.0
