@@ -2,7 +2,6 @@
 [character]
 success_symbol = "[➜](bold green)"   # Symbol for successful commands
 error_symbol = "[✗](bold red)"       # Symbol for failed commands
-style = "bold yellow"                # Default style for the prompt character
 
 # Configure the directory module
 [directory]
