@@ -1,0 +1,11 @@
+# alacritty.toml
+
+# Window settings
+[window]
+# Tamaño inicial de la ventana (en columnas y filas)
+dimensions = { columns = 100, lines =  30 }
+
+# Opciones de transparencia
+opacity = 0.9
+# Modo d inicio (puede ser fullscreen o maximized)
+startup_mode = "Windowed"
