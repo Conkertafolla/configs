@@ -9,3 +9,23 @@ dimensions = { columns = 100, lines =  30 }
 opacity = 0.9
 # Modo d inicio (puede ser fullscreen o maximized)
 startup_mode = "Windowed"
+
+[colors]
+# Colores primarios
+primary = { background = "#1e1e2e", foreground = "#cdd6f4" }
+
+[cursor]
+style = {shape= "Block", blinking = "Always"}
+
+[terminal]
+
+[terminal.shell]
+program = "nu"
+args = []
+
+[keyboard]
+bindings = [
+  { key = "C", mods = "Control", action = "Copy" },
+  { key = "V", mods = "Control", action = "Paste" },
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"}, # `Ctrl+D` to close
+]
